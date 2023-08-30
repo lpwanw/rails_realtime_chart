@@ -2127,7 +2127,6 @@ Lint/UselessRuby2Keywords:
 Lint/UselessSetterCall:
   Description: 'Checks for useless setter call to a local variable.'
   Enabled: true
-  SafeAutoCorrect: false
   VersionAdded: '0.13'
   VersionChanged: '1.2'
   Safe: false
@@ -2671,7 +2670,6 @@ Style/ArgumentsForwarding:
   Description: 'Use arguments forwarding.'
   StyleGuide: '#arguments-forwarding'
   Enabled: pending
-  AllowOnlyRestArgument: true
   VersionAdded: '1.1'
 
 Style/ArrayIntersect:
