@@ -9,6 +9,7 @@ gem "bootsnap", require: false
 gem "chartkick"
 gem "config"
 gem "dotenv-rails"
+gem "groupdate"
 gem "importmap-rails"
 gem "jbuilder"
 gem "mysql2", "~> 0.5"
