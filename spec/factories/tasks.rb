@@ -2,8 +2,8 @@
 
 FactoryBot.define do
   factory :task do
-    user
+    person
     description { FFaker::Lorem.sentence }
-    status { "MyString" }
+    status { Task.statuses.keys.sample }
   end
 end

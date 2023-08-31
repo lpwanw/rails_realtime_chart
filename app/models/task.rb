@@ -13,4 +13,14 @@ class Task < ApplicationRecord
   validates :description, length: { maximum: 255 }
 
   validates :status, presence: true
+
+  delegate :name, to: :person, prefix: true
+
+  after_save_commit :update_chart
+
+  private
+
+  def update_chart
+    broadcast_replace_to :tasks_chart_data, target: "tasks-chart-data", partial: "tasks/task_chart"
+  end
 end
