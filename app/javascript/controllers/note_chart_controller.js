@@ -5,12 +5,12 @@ export default class extends Controller {
   static targets = [ "data" ]
   connect() {
     if(this.element.id === "main-element") {
-      new Chartkick.LineChart("chart", JSON.parse(this.dataTarget.value))
+      new Chartkick.LineChart("chart", "/notes/query")
 
       return
     }
 
     this.chart = Chartkick.charts["chart"]
-    this.chart.updateData(JSON.parse(this.dataTarget.value))
+    this.chart.updateData("/notes/query")
   }
 }
