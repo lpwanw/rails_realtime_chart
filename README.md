@@ -1,4 +1,5 @@
 # README
+[![CI](https://github.com/lpwanw/rails_realtime_chart/actions/workflows/ci.yml/badge.svg)](https://github.com/lpwanw/rails_realtime_chart/actions/workflows/ci.yml)
 
 ## This is a demo for realtime chart
 
