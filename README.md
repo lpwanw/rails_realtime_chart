@@ -31,4 +31,24 @@
 
 ### Line Chart
 
+```shell
+    # clean database
+    rails db:migrate:reset
+    # monitor at /notes
+    # run fake realtime data update
+    rails db:seed type=note
+```
+
 [<img src="https://img.youtube.com/vi/mnO58x9uoRc/hqdefault.jpg" width="600" height="300"/>](https://www.youtube.com/embed/mnO58x9uoRc)
+
+### Bar Chart
+
+```shell
+    # clean database
+    rails db:migrate:reset
+    # monitor at /tasks
+    # run fake realtime data update
+    rails db:seed type=task
+```
+
+[<img src="https://img.youtube.com/vi/zD-bPZsbD20/hqdefault.jpg" width="600" height="300"/>](https://www.youtube.com/embed/zD-bPZsbD20)

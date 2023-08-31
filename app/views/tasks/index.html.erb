@@ -1,0 +1,10 @@
+<div data-controller="tasks-chart" id="main-element">
+  <h1 class="font-bold text-4xl">Tasks#index</h1>
+  <p>Find me in app/views/tasks/index.html.erb</p>
+
+  <div id="chart" style="height: 300px;"></div>
+
+  <%= turbo_stream_from :tasks_chart_data %>
+
+  <input id="tasks-chart-data" type="hidden" data-tasks-chart-target="data">
+</div>
